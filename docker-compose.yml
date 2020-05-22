@@ -1,0 +1,11 @@
+version: "3"
+services:
+  app:
+    container_name: "f2f-demo-env"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: face2face-demo
+    volumes: 
+        - /face2face-demo
+    tty: true    
